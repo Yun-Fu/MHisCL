@@ -247,10 +247,8 @@ def main():
         )
     return best
 
-import optuna
 import numpy as np
 import os.path as osp
-import pandas as pd
 import logging
 
 torch.set_num_threads(1)

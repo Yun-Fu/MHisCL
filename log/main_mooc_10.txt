@@ -1,0 +1,11 @@
+2024-10-18 16:41:37,371 - INFO - ########################## START #########################
+2024-10-18 16:41:37,371 - INFO - 
+mooc-param: {'dataset': 'mooc', 'n_run': 10, 'alpha': 1, 'con': 'all', 'time_enc': 'sste', 'aggr': 'gat', 'num_neighbors': [15, 10], 'num_workers': 8, 'hidden_channels': 64, 'num_timeslots': 3, 'heads': 8, 'nums_layers': 2, 'dropout': 0.7, 'lr': 0.0001, 'epochs': 35, 'history_retrieve': 'mean', 'recurrent': 'gru', 'tau': 0.02, 'batch_size': 256, 'zero_edge': False, 'gpu': 1}
+2024-10-18 16:42:42,305 - INFO - Epoch: 001, Loss: 21.5534, Val AUC: 53.74%, Test AUC: 52.85%, Best AUC: 52.85%
+2024-10-18 16:47:25,065 - INFO - Epoch: 005, Loss: 20.7068, Val AUC: 66.05%, Test AUC: 67.08%, Best AUC: 66.84%
+2024-10-18 16:53:27,671 - INFO - Epoch: 010, Loss: 21.2610, Val AUC: 64.77%, Test AUC: 63.16%, Best AUC: 73.42%
+2024-10-18 16:59:24,664 - INFO - Epoch: 015, Loss: 17.2884, Val AUC: 62.03%, Test AUC: 61.05%, Best AUC: 73.08%
+2024-10-18 17:05:18,881 - INFO - Epoch: 020, Loss: 16.8330, Val AUC: 61.75%, Test AUC: 63.47%, Best AUC: 73.08%
+2024-10-18 17:11:13,479 - INFO - Epoch: 025, Loss: 16.7962, Val AUC: 71.21%, Test AUC: 68.55%, Best AUC: 73.08%
+2024-10-18 17:17:10,090 - INFO - Epoch: 030, Loss: 16.7520, Val AUC: 78.72%, Test AUC: 75.49%, Best AUC: 75.49%
+2024-10-18 17:22:57,152 - INFO - Epoch: 035, Loss: 16.7092, Val AUC: 79.25%, Test AUC: 76.84%, Best AUC: 76.84%
