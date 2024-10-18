@@ -1,8 +1,0 @@
-2024-10-18 17:15:06,454 - INFO - ########################## START #########################
-2024-10-18 17:15:06,454 - INFO - 
-reddit-param: {'dataset': 'reddit', 'n_run': 10, 'alpha': 1, 'con': 'all', 'time_enc': 'sste', 'aggr': 'gat', 'num_neighbors': [30, 15], 'num_workers': 8, 'hidden_channels': 128, 'num_timeslots': 5, 'heads': 8, 'nums_layers': 2, 'dropout': 0.7, 'lr': 0.0001, 'epochs': 20, 'history_retrieve': 'mean', 'recurrent': 'gru', 'tau': 0.02, 'batch_size': 256, 'zero_edge': True, 'gpu': 1}
-2024-10-18 17:17:00,108 - INFO - Epoch: 001, Loss: 20.6381, Val AUC: 51.45%, Test AUC: 58.54%, Best AUC: 58.54%
-2024-10-18 17:24:51,003 - INFO - Epoch: 005, Loss: 17.1437, Val AUC: 72.39%, Test AUC: 67.56%, Best AUC: 70.88%
-2024-10-18 17:34:28,052 - INFO - Epoch: 010, Loss: 16.6855, Val AUC: 74.32%, Test AUC: 68.93%, Best AUC: 72.22%
-2024-10-18 17:44:20,117 - INFO - Epoch: 015, Loss: 16.8053, Val AUC: 72.86%, Test AUC: 69.89%, Best AUC: 72.22%
-2024-10-18 17:56:56,078 - INFO - Epoch: 020, Loss: 16.4954, Val AUC: 60.48%, Test AUC: 57.86%, Best AUC: 72.22%
