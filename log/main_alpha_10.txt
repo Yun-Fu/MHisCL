@@ -1,0 +1,8 @@
+2024-10-18 16:39:28,259 - INFO - ########################## START #########################
+2024-10-18 16:39:28,259 - INFO - 
+alpha-param: {'dataset': 'alpha', 'n_run': 10, 'alpha': 1, 'con': 'all', 'time_enc': 'sste', 'aggr': 'gat', 'num_neighbors': [15, 10], 'num_workers': 8, 'hidden_channels': 128, 'num_timeslots': 20, 'heads': 4, 'nums_layers': 2, 'dropout': 0.5, 'lr': 0.0005, 'epochs': 20, 'history_retrieve': 'mean', 'recurrent': 'gru', 'tau': 0.02, 'batch_size': 256, 'zero_edge': False, 'gpu': 1}
+2024-10-18 16:39:34,144 - INFO - Epoch: 001, Loss: 21.7219, Val AUC: 54.88%, Test AUC: 76.70%, Best AUC: 76.70%
+2024-10-18 16:39:55,909 - INFO - Epoch: 005, Loss: 18.6369, Val AUC: 56.26%, Test AUC: 72.29%, Best AUC: 72.29%
+2024-10-18 16:40:21,068 - INFO - Epoch: 010, Loss: 17.4339, Val AUC: 67.40%, Test AUC: 79.75%, Best AUC: 79.75%
+2024-10-18 16:40:49,818 - INFO - Epoch: 015, Loss: 17.1728, Val AUC: 59.25%, Test AUC: 73.62%, Best AUC: 78.93%
+2024-10-18 16:41:18,081 - INFO - Epoch: 020, Loss: 17.0202, Val AUC: 73.70%, Test AUC: 81.21%, Best AUC: 81.21%

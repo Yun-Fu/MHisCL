@@ -1,0 +1,10 @@
+2024-10-18 17:32:57,175 - INFO - ########################## START #########################
+2024-10-18 17:32:57,175 - INFO - 
+wikipedia-param: {'dataset': 'wikipedia', 'n_run': 10, 'alpha': 1, 'con': 'all', 'time_enc': 'sste', 'aggr': 'gat', 'num_neighbors': [15, 10], 'num_workers': 8, 'hidden_channels': 64, 'num_timeslots': 14, 'heads': 8, 'nums_layers': 2, 'dropout': 0.3, 'lr': 0.0005, 'epochs': 30, 'history_retrieve': 'mean', 'recurrent': 'gru', 'tau': 0.02, 'batch_size': 256, 'zero_edge': False, 'gpu': 1}
+2024-10-18 17:33:24,023 - INFO - Epoch: 001, Loss: 20.7234, Val AUC: 78.28%, Test AUC: 80.70%, Best AUC: 80.70%
+2024-10-18 17:35:18,934 - INFO - Epoch: 005, Loss: 17.0128, Val AUC: 84.24%, Test AUC: 88.07%, Best AUC: 87.82%
+2024-10-18 17:37:44,358 - INFO - Epoch: 010, Loss: 16.4739, Val AUC: 86.04%, Test AUC: 90.17%, Best AUC: 90.17%
+2024-10-18 17:40:16,331 - INFO - Epoch: 015, Loss: 16.2787, Val AUC: 88.90%, Test AUC: 90.13%, Best AUC: 90.13%
+2024-10-18 17:42:42,307 - INFO - Epoch: 020, Loss: 16.0812, Val AUC: 88.59%, Test AUC: 91.74%, Best AUC: 92.79%
+2024-10-18 17:45:09,184 - INFO - Epoch: 025, Loss: 15.9415, Val AUC: 88.53%, Test AUC: 91.94%, Best AUC: 92.79%
+2024-10-18 17:50:19,465 - INFO - Epoch: 030, Loss: 15.7406, Val AUC: 88.77%, Test AUC: 91.84%, Best AUC: 92.79%
