@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 # MHisCL
-=======
-# Code for MHisCL
 
 # Dataset
 - Download wikipedia, reddit and mooc datasets from [here](http://snap.stanford.edu/jodie/) and store their csv files in a folder named
@@ -31,4 +29,3 @@ python main.py --dataset otc --num_neighbors 15 10  --hidden_channels 128 --num_
 python main.py --dataset amazon --num_neighbors 15 10 --hidden_channels 64 --num_timeslots 20 --heads 4 --dropout 0.3 --lr 5e-4 --epochs 10 
 
 ```
->>>>>>> 1a760e8 (v0)
