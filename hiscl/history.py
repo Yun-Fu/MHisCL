@@ -26,7 +26,7 @@ class History(nn.Module):
             )
         elif recurrent == "gru":
             self.recurrent_network = nn.GRUCell(
-                input_size=dimension, hidden_size=dimension
+                input_size=dimension, hidden_size=dimension 
             )
         elif recurrent == "lstm":
             self.recurrent_network = nn.LSTMCell(
@@ -66,7 +66,7 @@ class History(nn.Module):
 
     def forward(self, x, idx, update=True):
         x = self.lin(x)
-        mem = self.get_history(idx) 
+        mem = self.get_history(idx)
         if self.recurrent == "lstm":
             out = self.recurrent_network(x, (mem, torch.zeros_like(mem)))[0]
         else:

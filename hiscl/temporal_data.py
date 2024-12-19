@@ -109,7 +109,7 @@ class TemporalData(BaseData):
         self.src = src
         self.dst = dst
         self.t = t
-        self.msg = msg#temporal data可以自己排序吗？不需要自己再去重组了？
+        self.msg = msg
 
         for key, value in kwargs.items():
             setattr(self, key, value)

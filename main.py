@@ -99,7 +99,7 @@ def test(loader, model, history, measure, device, data):
     preds = torch.cat(preds)
     preds[torch.isnan(preds)] = 0.0 
     labels = torch.cat(labels)
-    return measure(labels, preds)
+    return measure(labels[labels!=2], preds[labels!=2])
 
 
 def read_parser():
@@ -109,8 +109,6 @@ def read_parser():
     # Add the arguments
     parser.add_argument("--dataset", type=str,
                         default='wikipedia', help="The dataset to use")
-    parser.add_argument("--n_run", type=int,
-                        default=10, help="The number of runs") 
     parser.add_argument("--alpha", type=float,
                         default=1, help="The weight for structure contrastive loss")
     parser.add_argument("--con", type=str,
@@ -159,10 +157,11 @@ def read_parser():
 import numpy as np
 import os.path as osp
 import logging
-torch.set_num_threads(1)
 
 args = read_parser()
-logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO, filename=f'log/{osp.basename(__file__)[:-3]}_{args.dataset}_{args.n_run}.txt')
+if not os.path.exists('log'):
+    os.makedirs('log')
+logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO, filename=f'log/{osp.basename(__file__)[:-3]}_{args.dataset}.txt')
 log = logging.getLogger() 
 log.info('########################## START #########################')
 log.info(f'\n{args.dataset}-param: {args.__dict__}')
@@ -248,8 +247,7 @@ for epoch in range(1, 1 + args.epochs):
         f"Epoch: {epoch:03d}, Loss: {loss:.4f}, "
         f"Val AUC: {val_auc:.2%}, Test AUC: {test_auc:.2%}, Best AUC: {best:.2%}"
     )
-    if epoch==1 or epoch%5==0:
-        log.info(
+    log.info(
         f"Epoch: {epoch:03d}, Loss: {loss:.4f}, "
         f"Val AUC: {val_auc:.2%}, Test AUC: {test_auc:.2%}, Best AUC: {best:.2%}"
     )
