@@ -49,7 +49,7 @@ def process_amazon(root):
     df = df[selected_columns]  
 
     # label edge
-    # label principle: #vote>=5/20 & helpratio>=0.75 normal(0) & helpratio<=0.25 abnormal(1), left unknown(2)
+    # label principle: #vote>=10 & helpratio>=0.75 normal(0) & helpratio<=0.25 abnormal(1), left unknown(2)
     df['label'] = 2 
     df['HelpfulnessRatio'] = df['HelpfulnessNumerator']/df['HelpfulnessDenominator']
     df['HelpfulnessRatio'] = df['HelpfulnessRatio'].fillna(0)
