@@ -2,9 +2,9 @@
 # MHisCL
 
 # Dataset
-- Download wikipedia, reddit and mooc datasets from [here](http://snap.stanford.edu/jodie/) and store their csv files in a folder named
-```data/```.
-- Download the sample datasets (eg. wikipedia and reddit) from [here](http://snap.stanford.edu/jodie/) and store csv file in a folder named
+- Download original wikipedia, reddit and mooc datasets from [here](http://snap.stanford.edu/jodie/) and store their csv files in a folder named
+```data/$dataset```.
+- Download original amazon dataset from [here](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews) and store csv file in a folder named
 ```data/```.
 
 # Reproduction
