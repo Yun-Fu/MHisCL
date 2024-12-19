@@ -129,8 +129,6 @@ def load_dataset(dataset, val_ratio= 0.15, test_ratio= 0.15, zero_edge=False):
                             name=dataset, 
                             transform=TemporalSplit(val_ratio=val_ratio, test_ratio=test_ratio))[0]
         data = TemporalData(**data.to_dict())
-
-
         data.x = torch.zeros(data.num_nodes, 1)  
         if zero_edge:
             data.msg = torch.zeros(data.num_events, 1)  
