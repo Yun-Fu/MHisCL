@@ -18,4 +18,5 @@ python main.py --dataset alpha --num_neighbors 15 10  --hidden_channels 128 --nu
 
 # Bitcoin-otc
 python main.py --dataset otc --num_neighbors 15 10  --hidden_channels 128 --num_timeslots 10 --heads 8 --dropout 0.7 --lr 5e-4 --epochs 5 & 
+
 ```
